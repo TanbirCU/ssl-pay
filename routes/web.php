@@ -14,4 +14,5 @@ Route::get('/checkout/{productId}', [PaymentController::class, 'checkout'])->nam
 Route::post('/success', [PaymentController::class, 'paymentSuccess'])->name('payment.success');
 Route::post('/fail', [PaymentController::class, 'paymentFail'])->name('payment.fail');
 Route::post('/cancel', [PaymentController::class, 'paymentCancel'])->name('payment.cancel');
+// Route::post('/cancel', [PaymentController::class, 'paymentCancel'])->name('payment.cancel');
 
